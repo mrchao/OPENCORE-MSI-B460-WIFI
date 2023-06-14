@@ -29,7 +29,7 @@
 | ---- | ---------------- | ------------------------- | --- |
 | HS01 | USB2.0           | 后置面板网口旁USB-A口 1    | [x] |
 | HS02 | USB2.0           | 后置面板网口旁USB-A口 2    | [x] |
-| HS03 | USB2.0           | 后置面板USB-C口旁USB-A口   | [x] |
+| HS03 | USB2.0           | 后置面板USB-C口旁USB-A口   | |
 | HS04 | USB2.0 Type-C    | 后置面板USB-C口           | [x] |
 | HS05 | USB2.0 Type-C    | 主板扩展口JUSB3 1         | 可能接前面板 Type-C [x] |
 | HS06 | USB2.0           | 主板扩展口JUSB3 2         | 可能接前面板 USB3 [x] |
@@ -37,7 +37,7 @@
 | HS08 | 内置蓝牙          | 主板内置                  | [x] |
 | HS09 | USB2.0           | 后置面板PS2口旁USB-A口 1   | [x] |
 | HS10 | USB2.0           | 后置面板PS2口旁USB-A口 2   | [x] |
-| HS11 | 内置USB2.0Hub    | 主板扩展口JUSB1-2          |  |
+| HS11 | 内置USB2.0Hub    | 主板扩展口JUSB1-2          | [x] |
 | HS12 | 内置微星灯效控制   | 主板内置                   |  |
 | SS01 | USB3.0           | 后置面板网口旁USB-A口 1    | [x] |
 | SS02 | USB3.0           | 后置面板网口旁USB-A口 2    | [x] |
@@ -49,6 +49,12 @@
 
 ![MSI-B460-WIFI](https://github.com/mrchao/OPENCORE-MSI-B460-WIFI/assets/5938440/0709ed8d-c2ec-4598-9096-7430d55b4724)
 
+特殊端口说明：
+
+HS08：蓝牙端口，必须包含，否则蓝牙失效
+HS11：内部USB2.0Hub端口，如果未使用JUSB1-2扩展口则可以屏蔽
+HS12：微星灯效端口，mac下没有适配，可屏蔽
+---
 
 ### 问题
 1. SSD硬盘启动时间漫长
