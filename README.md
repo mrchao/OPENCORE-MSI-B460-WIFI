@@ -4,10 +4,7 @@
 ### 2023-06-14
 
 
-### 配置
-｜名称｜品牌｜型号｜
-
-## 硬件测试配置
+## 硬件配置
 
 | 部件      | 型号                     |
 | -------- | ------------------------ |
@@ -18,7 +15,9 @@
 | 独显     | 蓝宝石 RX580              |
 | 有线网卡 | RTL8125（板载）            |
 | 无线网卡 | Intel AX200（板载）        |
-| 硬盘     |    |
+| 硬盘     | 三星 970 EVO 256G（MacOS）|
+| 硬盘     | 三星 980 EVO 256G（Win10）|
+
 
 
 ## USB
@@ -47,7 +46,7 @@
 | SS06 | USB3.0           | 主板扩展口JUSB3 2         | 可能接前面板 USB3 [x] |
 | SS07 | USB3.0           | 主板扩展口JUSB4           |  |
 
-![MSI-B460-WIFI](https://github.com/mrchao/OPENCORE-MSI-B460-WIFI/assets/5938440/0709ed8d-c2ec-4598-9096-7430d55b4724)
+<img width="360" alt="MSI-B460-WIFI" src="https://github.com/mrchao/OPENCORE-MSI-B460-WIFI/assets/5938440/0709ed8d-c2ec-4598-9096-7430d55b4724" />
 
 特殊端口说明：
 
@@ -55,17 +54,33 @@
 - HS11：内部USB2.0Hub端口，如果未使用JUSB1-2扩展口则可以屏蔽
 - HS12：微星灯效端口，mac下没有适配，可屏蔽
 ---
+
+windows端口检测结果：
+
+<img width="720" alt="USB定制" src="https://github.com/mrchao/OPENCORE-MSI-B460-WIFI/assets/5938440/5870dea3-d489-4352-8aa8-195fbed994df">
+
+
+---
 定制流程参考 -> [黑苹果屋](http://imacos.top/2022/08/22/windows-usb-macos-bigsur-11-3-usbtoolbox/)
 ---
 
-### 问题
-1. SSD硬盘启动时间漫长
-原因：
-三星的某些型号的SSD，比如我的970 EVO plus，执行TRIM的操作特别的慢。而在APFS上，如果启用了TRIM，macOS会在启动的时候执行一次TRIM操作释放未使用的空间，就会导致启动速度特别的慢。
-解决：
-可以通过升级OpenCore到 0.7.9 及以上版本，然后设置SetApfsTrimTimeout值为0（默认为-1）关闭启动时的TRIM操作以提升启动速度。
+### 遇到问题
+- SSD硬盘启动时间漫长
+
+  `原因：`
+  三星的某些型号的SSD，比如我的970 EVO plus，执行TRIM的操作特别的慢。而在APFS上，如果启用了TRIM，macOS会在启动的时候执行一次TRIM操作释放未使用的空间，就会导致启动速度特别的慢。
+
+  `解决：`
+  可以通过升级OpenCore到 0.7.9 及以上版本，然后设置SetApfsTrimTimeout值为0（默认为-1）关闭启动时的TRIM操作以提升启动速度。
 
 ### OpenCore配置
+
+ACPI
+
+| name | desc |
+| ---- | ---- |
+| SSDT-PM.aml | 节能第5项（断电后重启）| 
+
 Misc/Boot
 HideAuxiliary 隐藏辅助项
 |类型|默认|
