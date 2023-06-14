@@ -55,6 +55,8 @@
 - HS11：内部USB2.0Hub端口，如果未使用JUSB1-2扩展口则可以屏蔽
 - HS12：微星灯效端口，mac下没有适配，可屏蔽
 ---
+定制流程参考 -> [黑苹果屋](http://imacos.top/2022/08/22/windows-usb-macos-bigsur-11-3-usbtoolbox/)
+---
 
 ### 问题
 1. SSD硬盘启动时间漫长
