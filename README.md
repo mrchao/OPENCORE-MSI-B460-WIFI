@@ -31,9 +31,9 @@
 | HS02 | USB2.0           | 后置面板网口旁USB-A口 2    | [x] |
 | HS03 | USB2.0           | 后置面板USB-C口旁USB-A口   | [x] |
 | HS04 | USB2.0 Type-C    | 后置面板USB-C口           | [x] |
-| HS05 | USB2.0           | 主板扩展口JUSB3 1         |  |
-| HS06 | USB2.0           | 主板扩展口JUSB3 2         |  |
-| HS07 | USB2.0 Type-C    | 主板扩展口JUSB4           | 可能接前面板 [x] |
+| HS05 | USB2.0 Type-C    | 主板扩展口JUSB3 1         | 可能接前面板 Type-C [x] |
+| HS06 | USB2.0           | 主板扩展口JUSB3 2         | 可能接前面板 USB3 [x] |
+| HS07 | USB2.0           | 主板扩展口JUSB4           |  |
 | HS08 | 内置蓝牙          | 主板内置                  | [x] |
 | HS09 | USB2.0           | 后置面板PS2口旁USB-A口 1   | [x] |
 | HS10 | USB2.0           | 后置面板PS2口旁USB-A口 2   | [x] |
@@ -43,10 +43,11 @@
 | SS02 | USB3.0           | 后置面板网口旁USB-A口 2    | [x] |
 | SS03 | USB3.0           | 后置面板USB-C口旁USB-A口   | [x] |
 | SS04 | USB3.0 Type-C    | 后置面板USB-C口           | [x] |
-| SS05 | USB3.0           | 主板扩展口JUSB3 1         |  |
-| SS06 | USB3.0           | 主板扩展口JUSB3 2         |  |
-| SS07 | USB3.0 Type-C    | 主板扩展口JUSB4           | 可能接前面板 [x] |
+| SS05 | USB3.0 Type-C    | 主板扩展口JUSB3 1         | 可能接前面板 Type-C [x] |
+| SS06 | USB3.0           | 主板扩展口JUSB3 2         | 可能接前面板 USB3 [x] |
+| SS07 | USB3.0           | 主板扩展口JUSB4           |  |
 
+![MSI-B460-WIFI](https://github.com/mrchao/OPENCORE-MSI-B460-WIFI/assets/5938440/0709ed8d-c2ec-4598-9096-7430d55b4724)
 
 
 ### 问题
