@@ -39,10 +39,10 @@ OC版本：0.88
 - [ ] 板载蓝牙
 - [ ] USB
 - [ ] 睡眠/唤醒
-- [x] airdrop 隔空投送
-- [x] hardoff 接力
-- [x] 通用控制
-- [x] 随航
+- [x] 隔空投送（airdrop）
+- [x] 通用控制（Universal Control）
+- [x] 接力（hardoff） 
+- [x] 随航（sidecar）
 - [x] watch解锁
 
 
