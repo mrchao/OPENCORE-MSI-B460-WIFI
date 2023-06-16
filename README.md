@@ -111,9 +111,21 @@ windows端口检测结果：
 
 ACPI
 
-| name | desc |
+| SSDT | 说明 |
 | ---- | ---- |
+| SSDT-AWAC.aml | 修复RTC设备，建议八代 (CoffeeLake) 以上的用户都添加 |
+| SSDT-PLUG.aml | 启用原生电源管理 |
+| SSDT-RHUB.aml | 修复USB设备，关闭 RHUB 设备并强制 macOS 手动重建端口，华硕400系列特供，微星部分，如460 |
+| SSDT-EC-USBX.aml | 仿冒的 EC 设备并完善了 USB 的供电, （EmbeddedController 原生的 ACPI 命名就是 EC，则不需要）|
 | SSDT-PM.aml | 节能第5项（断电后重启）| 
+
+ACPI/Quirks
+
+|name|desc|
+| ---- | ---- |
+|ResetLogoStatus|引导 Windows 操作系统时不显示 OEM Logo|
+
+---
 
 Misc/Boot
 HideAuxiliary 隐藏辅助项
